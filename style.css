@@ -30,7 +30,22 @@ body {
     margin-right: 10%;
     font-size: 150%;
     text-align: left;
+    display: flexbox;
+
 }
+@media (max-width: 768px) {
+    .texto p {
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        transform: translateX(-350%);
+      }
+  }
+
+
+
+
+
 
 .boton button{
     margin-left: 50px; 
@@ -72,6 +87,7 @@ body {
 .content {
     display: flex;
     flex-direction: column; 
+    max-width: 100%;
 }
 
 .boton {
